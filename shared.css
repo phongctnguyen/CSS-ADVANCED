@@ -28,12 +28,16 @@ body {
 	display: inline-block;
 
   font-weight: bold;
-  font-size: 22px;
-  vertical-align: middle;
+	font-size: 22px;
+	
+	height: 28px;
+
+	vertical-align: middle;
+	text-decoration: none;
 }
 
-.main-header__brand a {
-  text-decoration: none;
+.main-header__brand img {
+	height: 100%;
 }
 
 .main-nav {
