@@ -7,9 +7,9 @@
 */
 
 #product-overview {
-	position: relative;
+  position: relative;
 
-	/* background-image: url('./freedom.jpg');
+  /* background-image: url('./freedom.jpg');
 	background-position: left 10% bottom 20%;
 	background-size: cover;
   background-repeat: no-repeat;
@@ -17,15 +17,16 @@
 	background-clip: border-box;
 	background-attachment: fixed; */
 
-	/* background-shorthand: background-image background-position/background-size background-repeat background-origin background-clip background-attachment */
-	background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url('./images/freedom.jpg') left 10% bottom 20%/cover no-repeat border-box, #ff1b68;
-	/* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0, 0, 0, 0.5)); */
-	/* background-image: radial-gradient(ellipse farthest-corner, red, blue 70%, green); */
+  /* background-shorthand: background-image background-position/background-size background-repeat background-origin background-clip background-attachment */
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url('./images/freedom.jpg') left 10% bottom 70% / cover no-repeat border-box,
+    #ff1b68;
+  /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0, 0, 0, 0.5)); */
+  /* background-image: radial-gradient(ellipse farthest-corner, red, blue 70%, green); */
 
   width: 100%;
-  height: 528px;
-	padding: 10px;
-	margin-top: 43px;
+  height: 50vh;
+  margin-top: 2.75rem;
 }
 
 .section-title {
@@ -35,25 +36,29 @@
 }
 
 #product-overview h1 {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+
   font-family: 'Indie Flower', sans-serif;
 
   color: #fff;
 }
 
 .plan__list {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 
-	text-align: center;
+  text-align: center;
 }
 
 .plan {
   display: inline-block;
 
-	background-color: #d5ffdc;
-	
-	padding: 16px;
-  margin: 8px;
+  background-color: #d5ffdc;
+
+  padding: 1rem;
+  margin: 0.5rem;
   width: 30%;
 
   text-align: center;
@@ -68,89 +73,84 @@
 }
 
 .plan__annotation {
-	background-color: white;
-	color: #19b84c;
+  background-color: white;
+  color: #19b84c;
 
-	padding: 8px;
-	border-radius: 8px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 
-	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__title {
-	color: #0e4f1f;
+  color: #0e4f1f;
 }
 
 .plan__price {
-	color: rgb(133, 133, 133);
+  color: rgb(133, 133, 133);
 }
 
 .plan--highlighted .plan__title {
-	color: white;
+  color: white;
 }
 
 .plan--highlighted .plan__price {
-	color: #0e4f1f;
+  color: #0e4f1f;
 }
 
 .plan__features {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .plan__feature {
-	margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 #key-features {
-	background: #ff1b68;
+  background: #ff1b68;
 
-	margin-top: 80px;
-	padding: 16px;
+  margin-top: 80px;
+  padding: 1rem;
 }
 
 #key-features .section-title {
-	color: white;
+  color: white;
 
-	margin: 32px;
+  margin: 32px;
 }
 
 .key-feature__list {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	list-style-type: none;
-	text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 .key-feature {
-	display: inline-block;
-	width: 30%;
+  display: inline-block;
+  width: 30%;
 }
 
 .key-feature__image {
-	background-color: #ffcede;
+  background-color: #ffcede;
 
-	height: 128px;
-	width: 128px;
-	border: 2px solid #424242;
-	border-radius: 50%;
-	margin: 0 auto;
-	padding: 20px;
+  height: 128px;
+  width: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 1.25rem;
 }
 
 .key-feature__description {
-	color: white;
+  color: white;
 
-	font-weight: bold;
-	font-size: 20px;
+  font-weight: bold;
+  font-size: 1.25rem;
 
-	
-	text-align: center;
+  text-align: center;
 }
-
-
-
