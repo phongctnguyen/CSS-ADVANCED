@@ -10,6 +10,11 @@ body {
 	margin: 0;
 }
 
+main {
+	min-height: calc(100vh - 3.5rem - 8rem);
+	margin-top: 3.5rem;
+}
+
 .backdrop {
 	display: none;
 	position: fixed;
@@ -49,8 +54,10 @@ body {
 
   font-weight: bold;
 	font-size: 22px;
+
+	color: #0e4f1f;
 	
-	height: 28px;
+	height: 2.5rem;
 
 	text-decoration: none;
 	vertical-align: middle;
@@ -86,13 +93,8 @@ body {
   margin: 0.6rem 0;
 }
 
-
 .main-nav {
-  display: inline-block;
-
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display: none;
 }
 
 .main-nav__items {
@@ -143,6 +145,21 @@ body {
 	background-color: white;
 	
   border: none;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+		display: inline-block;
+		
+		width: calc(100% - 44px);
+		
+    text-align: right;
+    vertical-align: middle;
+  }
 }
 
 .main-footer {

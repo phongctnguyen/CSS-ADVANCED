@@ -19,20 +19,12 @@
 
   /* background-shorthand: background-image background-position/background-size background-repeat background-origin background-clip background-attachment */
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url('./images/freedom.jpg') left 10% bottom 70% / cover no-repeat border-box,
-    #ff1b68;
+    url('./images/freedom.jpg') center/cover no-repeat border-box, #ff1b68;
   /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0, 0, 0, 0.5)); */
   /* background-image: radial-gradient(ellipse farthest-corner, red, blue 70%, green); */
 
   width: 100%;
   height: 50vh;
-  margin-top: 2.75rem;
-}
-
-.section-title {
-  color: #2dff5c;
-
-  text-align: center;
 }
 
 #product-overview h1 {
@@ -41,25 +33,37 @@
   left: 3%;
 
   font-family: 'Indie Flower', sans-serif;
+  font-size: 1.6rem;
 
   color: #fff;
 }
 
-.plan__list {
-  width: 80%;
-  margin: 0 auto;
+@media (min-width: 40rem) and (min-height: 40rem) {
+  #product-overview {
+    background-position: 50% 25%;
+
+    height: 40vh;
+  }
+
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+.section-title {
+  color: #2dff5c;
 
   text-align: center;
 }
 
 .plan {
-  display: inline-block;
+  display: block;
 
   background-color: #d5ffdc;
 
   padding: 1rem;
-  margin: 0.5rem;
-  width: 30%;
+  margin: 0.5rem 0;
+  width: 100%;
 
   text-align: center;
   vertical-align: middle;
@@ -68,8 +72,6 @@
 .plan--highlighted {
   background: #19b84c;
   color: white;
-
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
@@ -109,6 +111,29 @@
   margin: 0.5rem 0;
 }
 
+@media (min-width: 40rem) {
+  .plan {
+    display: inline-block;
+
+    width: 30%;
+    min-width: 13rem;
+    max-width: 25rem;
+
+    vertical-align: middle;
+  }
+
+  .plan__list {
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
 #key-features {
   background: #ff1b68;
 
@@ -130,11 +155,6 @@
   text-align: center;
 }
 
-.key-feature {
-  display: inline-block;
-  width: 30%;
-}
-
 .key-feature__image {
   background-color: #ffcede;
 
@@ -153,6 +173,17 @@
   font-size: 1.25rem;
 
   text-align: center;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+
+    width: 30%;
+    max-width: 25rem;
+
+    vertical-align: top;
+  }
 }
 
 .modal {
