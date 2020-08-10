@@ -218,6 +218,14 @@ main {
 	outline: none;
 }
 
+.button[disabled] {
+	background: #ccc;
+	color: #a1a1a1;
+	border-color: #a1a1a1;
+
+	cursor: not-allowed;
+}
+
 .mobile-nav {
   display: none;
   position: fixed;
